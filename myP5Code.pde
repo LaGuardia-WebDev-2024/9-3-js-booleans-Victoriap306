@@ -18,7 +18,17 @@ draw = function() {
   text("It's zero", 10, 190);
 
   noFill();
-  rect(5, 60, 200, 40); 
+  if (theNumber > 0) { rect( 5, 60, 200, 40); }
+  if (theNumber < 0) { rect( 5, 110, 200, 40); }
+  if (theNumber == 0) { rect( 5, 160, 200, 40); }
+  
+  if(keyPressed) {
+    if(key == 'a') {theNumber ++;}
+    if(key == 's') {theNumber --;}
+  }
+  textSize(30);
+  text( "Press a to add and s to subtract", 5, 350);
+  
 };
 
 //draw Function - will run when mouseClicked
