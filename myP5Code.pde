@@ -28,7 +28,7 @@ draw = function() {
   }
   textSize(30);
   text( "Press a to add and s to subtract", 5, 350);
-  
+
 };
 
 //draw Function - will run when mouseClicked
